@@ -61,14 +61,20 @@ The `<item>` can be:
 - `target_link_options(<target> <options>...)`  
 Add options to the link step for an executable or library target.
 
-- `add_subdirectory()`  
-
+- `add_subdirectory(<directory>)`  
+Adds a subdirectory to the build.  
+The `<directory>` specifies the directory in which the source `CMakeLists.txt` and code files are located.
 
 
 
 ## Usage  
-You can use cmake generate Makefile, Ninja or some other 
-
+``` bash
+mkdir build
+cd build
+cmake ..
+make
+```
+You can use cmake to generate Makefile, Ninja or some other build system.  
 
 # Reference
 [Effective Modern CMake](https://gist.github.com/mbinna/c61dbb39bca0e4fb7d1f73b0d66a4fd1)  
